@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Z-index</title>
+    <style>
+        img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+        }
+
+        .container {
+            position: relative;
+        }
+
+        .black-box {
+            position: relative;
+            /*z-index: 1;*/
+            border: 2px solid black;
+            height: 100px;
+            margin: 30px;
+        }
+
+        .grey-box {
+            position: absolute;
+            /*z-index: 3;*/
+            background-color: lightgrey;
+            height: 60px;
+            width: 70%;
+            left: 50px;
+            top: 50px;
+        }
+
+        .green-box {
+            position: absolute;
+            /*z-index: 2;*/
+            background-color: lightgreen;
+            width: 35%;
+            left: 270px;
+            top: -15px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+<h1>Привіт, світе!</h1>
+<!--<img src="images/box2.jpg" alt="moon" style="width: 250px">-->
+<!--<br><br><br>-->
+<p>Текст</p>
+<div class="container">
+    <div class="black-box">Блек бокс</div>
+    <div class="grey-box">Ґрей бокс</div>
+    <div class="green-box">Ґрін бокс</div>
+</div>
+</body>
+</html>

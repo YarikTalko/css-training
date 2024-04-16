@@ -1,0 +1,74 @@
+div {
+    padding: 50px;
+    border: 1px solid black;
+    margin: 50px;
+    outline: 10px ridge green;
+}
+
+p.ex1 {
+    outline-width: thin;
+}
+
+p.ex2 {
+    outline-width: medium;
+}
+
+p.ex3 {
+    outline-width: thick;
+}
+
+p.ex4 {
+    outline-width: 4px;
+}
+
+p.exes {
+    border: 1px solid black;
+    outline-color: red;
+    outline-style: solid;
+}
+
+p.ex1_2 {
+    outline-style: solid;
+    /*outline-color: red;*/
+    outline-color: #ff0000;
+}
+
+p.ex2_2 {
+    outline-style: dotted;
+    /*outline-color: blue;*/
+    outline-color: rgb(0, 0, 255);
+}
+
+p.ex3_2 {
+    outline-style: outset;
+    /*outline-color: grey;*/
+    outline-color: hsl(0, 0%, 50%);
+}
+
+p.exes_2 {
+    border: 2px solid black;
+}
+
+p.ex1_3 {
+    outline: dashed;
+}
+
+p.ex2_3 {
+    outline: dotted red;
+}
+
+p.ex3_3 {
+    outline: 5px solid yellow;
+}
+
+p.ex4_3 {
+    outline: thick ridge pink;
+}
+
+p.ex1_4 {
+    margin: 30px;
+    background-color: yellow;
+    border: 1px solid black;
+    outline: 1px solid red;
+    outline-offset: 15px;
+}

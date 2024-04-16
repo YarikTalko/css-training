@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Media Queries</title>
+
+    <style>
+        body {
+            background-color: tan;
+        }
+
+        @media screen and (max-width: 992px) {
+            body {
+                background-color: blue;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            body {
+                background-color: olive;
+            }
+        }
+
+        .topNav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .topNav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        @media screen and (max-width: 600px) {
+            .topNav a {
+                float: none;
+                width: 100%;
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .column {
+            /*float: left;*/
+            /*width: 25%;*/
+            padding: 20px;
+            flex: 25%;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /*.row:after {*/
+        /*    content: "";*/
+        /*    display: table;*/
+        /*    clear: both;*/
+        /*}*/
+
+        @media screen and (max-width: 992px) {
+            .column {
+                /*width: 50%;*/
+                flex: 50%;
+            }
+
+            div.ex2 {
+                font-size: 80px;
+            }
+        }
+        
+        @media screen and (max-width: 600px) {
+            /*.column {*/
+            /*    width: 100%;*/
+            /*}*/
+            .row {
+                flex-direction: column;
+            }
+
+            div.ex {
+                display: none;
+            }
+
+            div.ex2 {
+                font-size: 32px;
+            }
+        }
+        
+        @media screen and (max-width: 900px) and (min-width: 600px), (min-width: 1100px) {
+            div.ex3 {
+                font-size: 50px;
+                padding: 50px;
+                border: 8px solid black;
+                background: yellow;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="topNav">
+    <a href="#">Home</a>
+    <a href="#">Link1</a>
+    <a href="#">Link2</a>
+    <a href="#">Link3</a>
+</div>
+<div class="row">
+    <div class="column" style="background-color: #aaa">
+        <h2>Column 1</h2>
+        <p>Some text...</p>
+    </div>
+    <div class="column" style="background-color: #bbb">
+        <h2>Column 2</h2>
+        <p>Some text...</p>
+    </div>
+    <div class="column" style="background-color: #ccc">
+        <h2>Column 3</h2>
+        <p>Some text...</p>
+    </div>
+    <div class="column" style="background-color: #ddd">
+        <h2>Column 4</h2>
+        <p>Some text...</p>
+    </div>
+</div>
+<div class="ex">
+    ex1
+</div>
+<div class="ex2">
+    <p>lkgmklbgmk</p>
+</div>
+<div class="ex3">
+    <p>petrkmbkojnjobmnbjonjintpo ,keohj</p>
+</div>
+</body>
+</html>

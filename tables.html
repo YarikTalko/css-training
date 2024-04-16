@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Tables</title>
+    <style>
+        /*#customers {
+            font-family: Arial, Halvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        #customers td, #customers th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        #customers tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #customers tr:hover {
+            background-color: #ddd;
+        }
+
+        #customers th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #04aa6d;
+            color: white;
+        }*/
+        table, th, td {
+            /*border: 1px solid black;*/
+        }
+
+        table {
+            width: 125%;
+            border-collapse: collapse;
+        }
+
+        td {
+            height: 50px;
+            text-align: center;
+            /*vertical-align: top;*/
+        }
+
+        th {
+            /*text-align: left;*/
+            /*padding: 20px;*/
+            padding-bottom: 15px;
+            padding-top: 15px;
+        }
+
+        th, td {
+            border-bottom: 1px solid #ddd;
+        }
+
+        tr:hover {
+            background-color: black;
+            color: #3399ff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        th {
+            background-color: dodgerblue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<h1>Привіт, світе!</h1>
+<div style="overflow: auto">
+<table>
+    <tr>
+        <th>Company</th>
+        <th>Contact</th>
+        <th>Country</th>
+    </tr>
+    <tr>
+        <td>Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+    </tr>
+    <tr>
+        <td>Berglunds snabbköp</td>
+        <td>Christina Berglund</td>
+        <td>Sweden</td>
+    </tr>
+    <tr>
+        <td>Centro comercial Moctezuma</td>
+        <td>Francisco Chang</td>
+        <td>Mexico</td>
+    </tr>
+</table>
+</div>
+</body>
+</html>

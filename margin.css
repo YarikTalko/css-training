@@ -1,0 +1,26 @@
+p {
+    margin: 100px;
+}
+
+div.ex1 {
+    width: 300px;
+    margin: auto;
+    border: 1px solid red;
+}
+
+div.ex2 {
+    border: 1px solid red;
+    margin-left: 100px;
+}
+
+p.ex2 {
+    margin-left: inherit;
+}
+
+h1 {
+    margin-bottom: 50px;
+}
+
+h2 {
+    margin-top: 20px;
+}

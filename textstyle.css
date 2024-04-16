@@ -1,0 +1,153 @@
+/*div {*/
+/*    border: 1px solid grey;*/
+/*    padding: 8px;*/
+/*}*/
+
+/*h1 {*/
+/*    text-align: center;*/
+/*    text-transform: uppercase;*/
+/*    color: #4caf50;*/
+/*}*/
+
+/*p {*/
+/*    text-indent: 50px;*/
+/*    text-align: justify;*/
+/*    letter-spacing: 3px;*/
+/*}*/
+
+/*a {*/
+/*    text-decoration: none;*/
+/*    color: #008cba;*/
+/*}*/
+
+/*body {
+    color: blue;
+    background-color: lightgrey;
+}
+
+h1 {
+    color: green;
+    background-color: black;
+}
+
+div {
+    background-color: blue;
+    color: white;
+}
+
+h2 {
+    text-align: left;
+}
+
+h3 {
+    text-align: center;
+}
+
+h4 {
+    text-align: right;
+}
+
+h5 {
+    text-align: justify;
+    text-align-last: left;
+}*/
+
+/*p {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}*/
+
+/*img.a {
+    vertical-align: baseline;
+}
+
+img.b {
+    vertical-align: text-top;
+}
+
+img.c {
+    vertical-align: text-bottom;
+}
+
+img.d {
+    vertical-align: sub;
+}
+
+img.e {
+    vertical-align: super;
+}*/
+
+h2 {
+    text-decoration-line: overline;
+    text-decoration-color: red;
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+}
+
+h3 {
+    text-decoration-line: line-through;
+    text-decoration-color: blue;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 5px;
+}
+
+h4 {
+    /*text-decoration-line: underline;
+    text-decoration-color: green;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 25%;*/
+    text-decoration: none;
+}
+
+h5 {
+    /*text-decoration-line: overline underline;*/
+    /*text-decoration-color: royalblue;*/
+    /*text-decoration-style: wavy;*/
+    /*text-decoration-thickness: 5px;*/
+    text-decoration: overline underline royalblue wavy 5px;
+}
+
+p.transformation_1 {
+    text-transform: uppercase;
+}
+
+p.transformation_2 {
+    text-transform: lowercase;
+}
+
+p.transformation_3 {
+    text-transform: capitalize;
+}
+
+p.indent {
+    text-indent: 50px;
+}
+
+p.spacing {
+    letter-spacing: 50px;
+}
+
+p.smallheight {
+    line-height: 0.8;
+}
+
+p.bigheight {
+    line-height: 1.8;
+}
+
+p.wordspacing_1 {
+    word-spacing: 10px;
+}
+
+p.wordspacing_2 {
+    word-spacing: -2px;
+}
+
+p.whitespacing {
+    white-space: nowrap;
+}
+
+h1 {
+    /*text-shadow: 2px 2px 5px red;*/
+    text-shadow: 0 0 3px red, 0 0 3px green, 0 0 3px blue;
+}

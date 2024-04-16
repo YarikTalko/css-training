@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Opacity</title>
+    <style>
+        img {
+            opacity: 1;
+        }
+
+        img:hover {
+            opacity: 0.5;
+        }
+
+        div {
+            background-color: #4caf50;
+            padding: 10px;
+        }
+
+        div.ex1 {
+            opacity: 0.1;
+        }
+
+        div.ex2 {
+            opacity: 0.3;
+        }
+
+        div.ex3 {
+            opacity: 0.6;
+        }
+
+        div.ex4 {
+            background-color: rgba(76, 175, 80, 0.1);
+        }
+
+        div.ex5 {
+            background-color: rgba(76, 175, 80, 0.3);
+        }
+
+        div.ex6 {
+            background-color: rgba(76, 175, 80, 0.6);
+        }
+
+        div.background {
+            background: url("images/box4.jpg") repeat;
+            border: 2px solid black;
+        }
+
+        div.transbox {
+            margin: 30px;
+            background-color: #fff;
+            border: 1px solid black;
+            opacity: 0.6;
+        }
+
+        div.transbox p {
+            margin: 5%;
+            font-weight: bold;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+<h1>Привіт, світе!</h1>
+<div class="background">
+    <div class="transbox">
+        <p>Якийсь текст в трансперанті боксі.</p>
+    </div>
+</div>
+<div class="ex4">Opacity - 0.1</div>
+<div class="ex5">Opacity - 0.3</div>
+<div class="ex6">Opacity - 0.6</div>
+<div>Opacity - 1</div>
+<br>
+<div class="ex1">Opacity - 0.1</div>
+<div class="ex2">Opacity - 0.3</div>
+<div class="ex3">Opacity - 0.6</div>
+<div>Opacity - 1</div>
+<img src="images/box3.jpg" alt="box3">
+</body>
+</html>

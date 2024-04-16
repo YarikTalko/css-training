@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Text Effects</title>
+    <style>
+        p.ex1 {
+            white-space: nowrap;
+            width: 200px;
+            border: 1px solid #000000;
+            overflow: hidden;
+            text-overflow: clip;
+        }
+
+        p.ex2 {
+            white-space: nowrap;
+            width: 200px;
+            border: 1px solid #000000;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        p.ex2:hover {
+            overflow: visible;
+        }
+
+        p.ex3 {
+            width: 200px;
+            height: auto;
+            border: 1px solid black;
+            word-wrap: break-word;
+        }
+
+        p.ex4 {
+            width: 150px;
+            height: auto;
+            border: 1px solid black;
+            word-break: keep-all;
+        }
+
+        p.ex5 {
+            width: 150px;
+            height: auto;
+            border: 1px solid black;
+            word-break: break-all;
+        }
+
+        p.ex6 {
+            writing-mode: horizontal-tb;
+        }
+
+        span.ex7 {
+            writing-mode: vertical-rl;
+        }
+
+        p.ex7 {
+            writing-mode: vertical-lr;
+        }
+    </style>
+</head>
+<body>
+<p class="ex1">This is some long text that will not fit in the box</p>
+<p class="ex2">This is some long text that will not fit in the box</p>
+<p class="ex3">This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will
+    break and wrap to the next line.</p>
+<p class="ex4">This paragraph contains some text. The lines will break at any character.</p>
+<p class="ex5">This paragraph contains some text. The lines will break at any character.</p>
+<p class="ex7">Some text with a span element with a vertical-rl writing-mode.</p>
+<p class="ex6">Some text with a span element with a <span class="ex7">vertical-rl</span> writing-mode.</p>
+</body>
+</html>

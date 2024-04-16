@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Shadow Effects</title>
+    <style>
+        div.ex1 {
+            /*box-shadow: 10px 10px;*/
+            /*box-shadow: 10px 10px lightblue;*/
+            /*box-shadow: 10px 10px 5px lightblue;*/
+            /*box-shadow: 10px 10px 5px 10px lightblue;*/
+            /*box-shadow: 10px 10px 5px lightblue inset;*/
+            box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green;
+            padding: 10px;
+            width: 200px;
+            height: auto;
+            background-color: yellow;
+        }
+
+        div.card, div.polaroid {
+            width: 250px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            text-align: center;
+        }
+
+        div.header {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px;
+            font-size: 40px;
+        }
+
+        div.container {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+    <div class="header">
+        <h1>1</h1>
+    </div>
+
+    <div class="container">
+        <p>October 19, 2023</p>
+    </div>
+</div>
+<br>
+<div class="polaroid">
+    <img src="images/box1.jpg" alt="box1" style="width: 100%">
+    <div class="container">
+        <p>Image</p>
+    </div>
+</div>
+<br>
+<div class="ex1">A div element with a box-shadow</div>
+
+<br>
+<hr>
+
+<h1 style="text-shadow: 2px 2px">Shadow Effect</h1>
+<h1 style="text-shadow: 2px 2px red">Shadow Effect</h1>
+<h1 style="text-shadow: 2px 2px 5px red">Shadow Effect</h1>
+<h1 style="color: white;text-shadow: 2px 2px 4px black">Shadow Effect</h1>
+<h1 style="text-shadow: 0 0 4px red">Shadow Effect</h1>
+<h1 style="text-shadow: 0 0 3px red, 0 0 5px #0000ff">Shadow Effect</h1>
+<h1 style="color: white;text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue">Shadow Effect</h1>
+<h1 style="color: coral;text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black">Shadow Effect</h1>
+</body>
+</html>

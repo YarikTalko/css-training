@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Pseudo-class</title>
+    <style>
+        a:link {
+            color: #ff0000;
+        }
+
+        a:visited {
+            color: #00ff00;
+        }
+
+        a:hover {
+            color: #ff00ff;
+        }
+
+        a:active {
+            color: #00ffff;
+        }
+
+        a.highlight:hover {
+            color: pink;
+            text-decoration-line: none;
+        }
+
+        div:hover {
+            background-color: lightblue;
+        }
+
+        p.ex1 {
+            display: none;
+            background-color: yellow;
+            padding: 20px;
+        }
+
+        div.ex1:hover p {
+            display: block;
+        }
+
+        p:first-child strong {
+            color: blue;
+        }
+
+        q:lang(no) {
+            quotes: "~" "~";
+        }
+    </style>
+</head>
+<body>
+<h1>Привіт, світе!</h1>
+<p><a href="https://kinobaza.com.ua/titles/a-savannah-haunting">Посилання</a></p>
+<p><a href="">Без посилання</a></p>
+<div>
+    <p>Наведіться на текст</p>
+</div>
+<div class="ex1">
+    Наведіться і вилетить підказка.
+    <p class="ex1">Підказка!!</p>
+</div>
+<div>
+    <p>перший <strong>стронґ</strong> елемент</p>
+    <p>другий <strong>стронґ</strong> елемент і третій <strong>стронґ</strong> елемент</p>
+</div>
+<p>Дейкий текст <q lang="no">квот ін переґраф</q> деякий текст</p>
+</body>
+</html>

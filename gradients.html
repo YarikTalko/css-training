@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Gradients</title>
+    <style>
+        .grad {
+            height: 200px;
+            background-color: red;
+            text-align: center;
+        }
+
+        #grad1 {
+            background-image: linear-gradient(red, yellow);
+        }
+
+        #grad2 {
+            background-image: linear-gradient(to right, red, yellow);
+        }
+
+        #grad3 {
+            background-image: linear-gradient(to bottom right, red, yellow);
+        }
+
+        #grad4 {
+            background-image: linear-gradient(180deg, red, yellow);
+        }
+
+        #grad5 {
+            background-image: linear-gradient(red, yellow, green);
+        }
+
+        #grad6 {
+            background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+        }
+
+        #grad7 {
+            background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1));
+        }
+
+        #grad8 {
+            background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+        }
+
+        #grad9 {
+            background-image: radial-gradient(red, yellow, green);
+        }
+
+        #grad10 {
+            background-image: radial-gradient(red 5%, yellow 10%, green 60%);
+        }
+
+        #grad11 {
+            background-image: radial-gradient(circle, red, yellow, green);
+        }
+
+        #grad12 {
+            background-image: radial-gradient(closest-side at 60% 50%, red, yellow, black);
+        }
+
+        #grad13 {
+            background-image: radial-gradient(farthest-side at 60% 50%, red, yellow, black);
+        }
+
+        #grad14 {
+            background-image: radial-gradient(closest-corner at 60% 50%, red, yellow, black);
+        }
+
+        #grad15 {
+            background-image: radial-gradient(farthest-corner at 60% 50%, red, yellow, black);
+        }
+
+        #grad16 {
+            background-image: repeating-radial-gradient(red, yellow 10%, green 15%);
+        }
+
+        #grad17 {
+            background-image: conic-gradient(red, yellow, green);
+        }
+
+        #grad18 {
+            background-image: conic-gradient(red, yellow, green, blue, black);
+        }
+
+        #grad19 {
+            background-image: conic-gradient(red 45deg, yellow 90deg, green 210deg);
+        }
+
+        #grad20 {
+            background-image: conic-gradient(red 45deg, yellow 90deg, green 210deg);
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+        }
+
+        #grad21 {
+            background-image: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg,
+            green 180deg, green 270deg, blue 270deg);
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+        }
+
+        #grad22 {
+             background-image: conic-gradient(from 90deg, red, yellow, green);
+             border-radius: 50%;
+             height: 100px;
+             width: 100px;
+         }
+
+        #grad23 {
+            background-image: conic-gradient(at 60% 45%, red, yellow, green);
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+        }
+
+        #grad24 {
+            background-image: repeating-conic-gradient(red 10%, yellow 20%);
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+        }
+
+        #grad25 {
+            background-image: repeating-conic-gradient(red 0deg 10deg, yellow 10deg 20deg, blue 20deg 30deg);
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+<div id="grad17" class="grad">
+    conic grad
+</div>
+<br>
+<div id="grad18" class="grad">
+    conic grad
+</div>
+<br>
+<div id="grad19" class="grad">
+    conic grad
+</div>
+<br>
+<div id="grad20" class="grad">
+    conic grad
+</div>
+<br>
+<div id="grad21" class="grad">
+    conic grad
+</div>
+<br>
+<div id="grad22" class="grad">
+    conic grad
+</div>
+<br>
+<div id="grad23" class="grad">
+    conic grad
+</div>
+<br>
+<div id="grad24" class="grad">
+    conic grad
+</div>
+<br>
+<div id="grad25" class="grad">
+    conic grad
+</div>
+
+<hr>
+
+<div id="grad9" class="grad">
+    radial grad
+</div>
+<br>
+<div id="grad10" class="grad">
+    radial grad - Differently Spaced Color Stops
+</div>
+<br>
+<div id="grad11" class="grad">
+    radial grad - Set Shape
+</div>
+<br>
+<div id="grad12" class="grad">
+    radial grad - closest-side
+</div>
+<br>
+<div id="grad13" class="grad">
+    radial grad - farthest-side
+</div>
+<br>
+<div id="grad14" class="grad">
+    radial grad - closest-corner
+</div>
+<br>
+<div id="grad15" class="grad">
+    radial grad - farthest-corner
+</div>
+<br>
+<div id="grad16" class="grad">
+    radial grad - repeat
+</div>
+
+<hr>
+
+<div id="grad1" class="grad">
+    top to bottom
+</div>
+<br>
+<div id="grad2" class="grad">
+    left to right
+</div>
+<br>
+<div id="grad3" class="grad">
+    top to bottom right
+</div>
+<br>
+<div id="grad4" class="grad">
+    180deg
+</div>
+<br>
+<div id="grad5" class="grad">
+    multiple
+</div>
+<br>
+<div id="grad6" class="grad">
+    rainbow
+</div>
+<br>
+<div id="grad7" class="grad">
+    transparency
+</div>
+<br>
+<div id="grad8" class="grad">
+    Repeating a linear-gradient
+</div>
+</body>
+</html>

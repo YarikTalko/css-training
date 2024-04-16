@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Web Fonts</title>
+
+    <style>
+        @font-face {
+            font-family: myFirstFont;
+            src: url("fonts/Sansation-Light.ttf");
+        }
+
+        @font-face {
+            font-family: myFirstFont;
+            src: url("fonts/Sansation-Bold.ttf");
+            font-weight: bold;
+        }
+
+        div {
+            font-family: myFirstFont;
+        }
+    </style>
+</head>
+<body>
+<div style="font-size: 50px;">
+    <p>Текст зі своїм <b>шрифтом. Text with</b> my own font.</p>
+</div>
+</body>
+</html>

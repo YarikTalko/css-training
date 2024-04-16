@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Masking</title>
+
+    <style>
+        .mask1 {
+            -webkit-mask-image: url("images/w3logo.png");
+            mask-image: url("images/w3logo.png");
+            -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+        }
+
+        .mask2 {
+            mask-image: linear-gradient(black, transparent);
+            /*-webkit-mask-image: linear-gradient(black, transparent);*/
+        }
+
+        .mask3 {
+            max-width: 600px;
+            height: 350px;
+            overflow-y: scroll;
+            background: url("images/box2.jpg") no-repeat;
+            mask-image: linear-gradient(black, transparent);
+            /*-webkit-mask-image: linear-gradient(black, transparent);*/
+            color: white;
+        }
+
+        .mask4 {
+            /*-webkit-mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);*/
+            mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
+        }
+
+        .mask5 {
+            mask-image: radial-gradient(ellipse, black 50%, rgba(0, 0, 0, 0.5) 50%);
+        }
+    </style>
+</head>
+<body>
+<div class="mask1">
+    <img src="images/box2.jpg" alt="пейзаж" width="600" height="400">
+</div>
+<div class="mask2">
+    <img src="images/box2.jpg" alt="пейзаж" width="600" height="400">
+</div>
+<div class="mask3">
+    <p>pwtjktrjoit moitbiotbmoisrmoimiomsoimoimroim oi moibm oi roi mo itm n ujn iuu nih nt hin hi nhi niu n itn iun iun
+        iu nhi n ihn in i niu ni n ihn hi nhi n hin hn hi nih n in ihn ih nih jn ihjn ijn ij ni n iun uiun ui unui n ui
+        nui n iujn ui nui un pwtjktrjoit moitbiotbmoisrmoimiomsoimoimroim oi moibm oi roi mo itm n ujn iuu nih nt hin hi nhi niu n itn iun iun
+        iu nhi n ihn in i niu ni n ihn hi nhi n hin hn hi nih n in ihn ih nih jn ihjn ijn ij ni n iun uiun ui unui n ui
+        nui n iujn ui nui unpwtjktrjoit moitbiotbmoisrmoimiomsoimoimroim oi moibm oi roi mo itm n ujn iuu nih nt hin hi nhi niu n itn iun iun
+        iu nhi n ihn in i niu ni n ihn hi nhi n hin hn hi nih n in ihn ih nih jn ihjn ijn ij ni n iun uiun ui unui n ui
+        nui n iujn ui nui unpwtjktrjoit moitbiotbmoisrmoimiomsoimoimroim oi moibm oi roi mo itm n ujn iuu nih nt hin hi nhi niu n itn iun iun
+        iu nhi n ihn in i niu ni n ihn hi nhi n hin hn hi nih n in ihn ih nih jn ihjn ijn ij ni n iun uiun ui unui n ui
+        nui n iujn ui nui unpwtjktrjoit moitbiotbmoisrmoimiomsoimoimroim oi moibm oi roi mo itm n ujn iuu nih nt hin hi nhi niu n itn iun iun
+        iu nhi n ihn in i niu ni n ihn hi nhi n hin hn hi nih n in ihn ih nih jn ihjn ijn ij ni n iun uiun ui unui n ui
+        nui n iujn ui nui unpwtjktrjoit moitbiotbmoisrmoimiomsoimoimroim oi moibm oi roi mo itm n ujn iuu nih nt hin hi nhi niu n itn iun iun
+        iu nhi n ihn in i niu ni n ihn hi nhi n hin hn hi nih n in ihn ih nih jn ihjn ijn ij ni n iun uiun ui unui n ui
+        nui n iujn ui nui unpwtjktrjoit moitbiotbmoisrmoimiomsoimoimroim oi moibm oi roi mo itm n ujn iuu nih nt hin hi nhi niu n itn iun iun
+        iu nhi n ihn in i niu ni n ihn hi nhi n hin hn hi nih n in ihn ih nih jn ihjn ijn ij ni n iun uiun ui unui n ui
+        nui n iujn ui nui un</p>
+</div>
+<div class="mask4">
+    <img src="images/box2.jpg" alt="пейзаж" width="600" height="400">
+</div>
+<div class="mask5">
+    <img src="images/box2.jpg" alt="пейзаж" width="600" height="400">
+</div>
+<svg width="600" height="400">
+    <mask id="svgmask1">
+        <polygon fill="#fff" points="200, 0, 400 400, 0, 400"></polygon>
+    </mask>
+    <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img_5terre.jpg" mask="url(#svgmask1)"></image>
+<!--    <img src="images/box2.jpg" alt="краєвид" mask="url(#svgmask1)">-->
+</svg>
+</body>
+</html>

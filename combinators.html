@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Combinators</title>
+    <style>
+        div p {
+            background-color: #73ad21;
+        }
+
+        div > p {
+            color: white;
+        }
+
+        div + p {
+            background-color: pink;
+        }
+
+        div ~ p {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<h1>Привіт, світе!</h1>
+<div>
+    <p>Тут зелений бекґраунд.</p>
+    <p>Тут зелений бекґраунд.</p>
+    <section>
+        <p>Тут не білий текст.</p>
+    </section>
+    <p>Тут зелений бекґраунд.</p>
+</div>
+<p>Тут рожевий бекґраунд і центрований текст.</p>
+<p>Тут не зелений бекґраунд і центрований текст.</p>
+<h3>бубубу</h3>
+<p>Тут не зелений бекґраунд і центрований текст.</p>
+</body>
+</html>

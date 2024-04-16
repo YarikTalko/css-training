@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Rounded Images</title>
+
+    <style>
+        /*img {*/
+        /*    !*width: 600px;*!*/
+        /*    border-radius: 8px;*/
+        /*    !*border-radius: 50%;*!*/
+        /*    border: 1px solid #ddd;*/
+        /*    padding: 5px;*/
+        /*    max-width: 100%;*/
+        /*    height: auto;*/
+
+        /*    display: block;*/
+        /*    margin-left: auto;*/
+        /*    margin-right: auto;*/
+        /*    width: 50%;*/
+        /*}*/
+
+        img:hover {
+            box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+        }
+
+        div.polaroid {
+            width: 100%;
+            background-color: white;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        img {
+            width: 100px;
+            height: auto;
+            /*opacity: 0.4;*/
+        }
+
+        div.container {
+            text-align: center;
+            padding: 10px 20px;
+            position: relative;
+        }
+
+        .text {
+            position: absolute;
+            font-size: 18px;
+            color: black;
+        }
+
+        .topLeft {
+            top: 16px;
+            left: 16px;
+        }
+
+        .topRight {
+            top: 16px;
+            right: 16px;
+        }
+
+        .bottomLeft {
+            bottom: 16px;
+            left: 16px;
+        }
+
+        .bottomRight {
+            bottom: 16px;
+            right: 16px;
+        }
+
+        .center {
+            left: 50%;
+            top: 50%;
+        }
+
+        .blur {
+            filter: blur(4px);
+        }
+
+        .brighness {
+            filter: brightness(250%);
+        }
+
+        .contrast {
+            filter: contrast(180%);
+        }
+
+        .grayscale {
+            filter: grayscale(100%);
+        }
+
+        .huerotate {
+            filter: hue-rotate(180deg);
+        }
+
+        .invert {
+            filter: invert(100%);
+        }
+
+        .opacity {
+            filter: opacity(50%);
+        }
+
+        .saturate {
+            filter: saturate(7);
+        }
+
+        .sepia {
+            filter: sepia(100%);
+        }
+
+        .shadow {
+            filter: drop-shadow(8px 8px 10px green);
+        }
+
+        .container1 {
+            position: relative;
+            width: 50%;
+        }
+
+        .image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .overlay {
+            position: absolute;
+            /*top: 0;*/
+            left: 0;
+            bottom: 100%;
+            right: 0;
+            height: 0;
+            width: 100%;
+            /*opacity: 0;*/
+            overflow: hidden;
+            transition: .5s ease;
+            background-color: blue;
+        }
+
+        .container1:hover .overlay {
+            /*opacity: 1;*/
+            bottom: 0;
+            height: 100%;
+        }
+
+        .text1 {
+            white-space: nowrap;
+            position: absolute;
+            color: white;
+            overflow: hidden;
+            font-size: 20px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        img.hover:hover {
+            transform: scaleX(-1);
+        }
+
+        div.gallery {
+            border: 1px solid #ccc;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .resonsive {
+            padding: 0 6px;
+            float: left;
+            width: 24.99999%;
+        }
+        
+        @media only screen and (max-width: 700px) {
+            .resonsive {
+                width: 49.99999%;
+                margin: 6px 0;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            .resonsive {
+                width: 100%;
+            }
+        }
+
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+
+<!--<div class="resonsive">-->
+<!--    <div class="gallery">-->
+<!--        <img src="images/box4.jpg" width="580" height="580">-->
+<!--        <div class="desc">Description</div>-->
+<!--    </div>-->
+<!--</div>-->
+<!--<div class="resonsive">-->
+<!--    <div class="gallery">-->
+<!--        <img src="images/box4.jpg" width="580" height="580">-->
+<!--        <div class="desc">Description</div>-->
+<!--    </div>-->
+<!--</div>-->
+<!--<div class="resonsive">-->
+<!--    <div class="gallery">-->
+<!--        <img src="images/box4.jpg" width="580" height="580">-->
+<!--        <div class="desc">Description</div>-->
+<!--    </div>-->
+<!--</div>-->
+<!--<div class="resonsive">-->
+<!--    <div class="gallery">-->
+<!--        <img src="images/box4.jpg" width="580" height="580">-->
+<!--        <div class="desc">Description</div>-->
+<!--    </div>-->
+<!--</div>-->
+<!--<div class="resonsive">-->
+<!--    <div class="gallery">-->
+<!--        <img src="images/box4.jpg" width="580" height="580">-->
+<!--        <div class="desc">Description</div>-->
+<!--    </div>-->
+<!--</div>-->
+<!--<img src="images/box4.jpg" class="hover">-->
+<!--<div class="container1">-->
+<!--    <img src="images/box4.jpg" class="image">-->
+<!--    <div class="overlay">-->
+<!--        <div class="text1">Hello World</div>-->
+<!--    </div>-->
+<!--</div>-->
+<!--<img src="images/box2.jpg">-->
+<!--<div class="polaroid">-->
+<!--    <img src="images/box2.jpg" style="width: 1000px; height: 300px">-->
+<!--&lt;!&ndash;    <div class="container">&ndash;&gt;-->
+<!--&lt;!&ndash;        <p>ernvietbni</p>&ndash;&gt;-->
+<!--&lt;!&ndash;    </div>&ndash;&gt;-->
+<!--    <div class="text topLeft">Top Left</div>-->
+<!--    <div class="text topRight">Top Right</div>-->
+<!--    <div class="text bottomLeft">Bottom Left</div>-->
+<!--    <div class="text bottomRight">Bottom Right</div>-->
+<!--    <div class="text center">Center</div>-->
+<!--</div>-->
+<!--<img class="blur" src="images/box2.jpg">-->
+<!--<img class="brighness" src="images/box2.jpg">-->
+<!--<img class="contrast" src="images/box2.jpg">-->
+<!--<img class="grayscale" src="images/box2.jpg">-->
+<!--<img class="huerotate" src="images/box2.jpg">-->
+<!--<img class="invert" src="images/box2.jpg">-->
+<!--<img class="opacity" src="images/box2.jpg">-->
+<!--<img class="saturate" src="images/box2.jpg">-->
+<!--<img class="sepia" src="images/box2.jpg">-->
+<!--<img class="shadow" src="images/box2.jpg">-->
+</body>
+</html>

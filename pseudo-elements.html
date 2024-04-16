@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Pseudo-elements</title>
+    <style>
+        /*p::first-line {
+            color: #ff0000;
+            font-variant: small-caps;
+        }
+
+        p::first-letter {
+            font-size: xx-large;
+            color: #73ad21;
+        }
+
+        p.intro::first-letter {
+            background-color: #3399ff;
+            color: white;
+        }*/
+        p.ex1::first-letter {
+            color: #f00;
+            font-size: x-large;
+        }
+
+        p.ex1::first-line {
+            color: #00f;
+            font-variant: small-caps;
+        }
+
+        h1::before {
+            content: url("images/box1.jpg");
+        }
+
+        h1::after {
+            content: url("images/box3.jpg");
+        }
+
+        ::marker {
+            color: red;
+            font-size: 23px;
+        }
+
+        ::selection {
+            color: red;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+<h1 style="text-align: center">Привіт, світе!</h1>
+<ul>
+    <li>Кава</li>
+    <li>Чай</li>
+    <li>Молоко</li>
+</ul>
+<ol>
+    <li>Кава</li>
+    <li>Чай</li>
+    <li>Молоко</li>
+</ol>
+<p class="ex1">бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла
+    бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла
+    бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла
+    бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла </p>
+<p>бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла
+    бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла
+    бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла
+    бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла
+    бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла </p>
+<p class="intro">Крутий текст</p>
+</body>
+</html>

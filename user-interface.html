@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS User Interface</title>
+  <style>
+    div {
+      border: 2px solid;
+      width: 200px;
+      height: 200px;
+      resize: both;
+      overflow: auto;
+    }
+
+    div.ex1 {
+      margin: 20px;
+      border: 1px solid black;
+      outline: 4px solid red;
+      outline-offset: 15px;
+    }
+
+    div.ex2 {
+      margin: 10px;
+      border: 1px solid black;
+      outline: 5px dashed blue;
+      outline-offset: 5px;
+    }
+  </style>
+</head>
+<body>
+<div class="ex1">This div has a 4 pixels solid red outline 15 pixels outside the border edge.</div>
+<div class="ex2">This div has a 5 pixels dashed blue outline 5 pixels outside the border edge.</div>
+<div>
+  <p>This div element is resizable by the user!</p>
+  <p>To resize: Click and drag the bottom right corner of this div element.</p>
+</div>
+</body>
+</html>

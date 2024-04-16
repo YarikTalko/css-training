@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Position</title>
+    <style>
+        div.static {
+            position: static;
+            border: 3px solid #73ad21;
+        }
+
+        div.relative {
+            position: relative;
+            left: 30px;
+            width: 400px;
+            height: 300px;
+            border: 3px solid #73ad21;
+        }
+
+        div.fixed {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 300px;
+            border: 3px solid #73ad21;
+        }
+
+        div.absolute {
+            position: absolute;
+            top: 80px;
+            right: 0;
+            width: 200px;
+            height: 100px;
+            border: 3px solid #73ad21;
+        }
+
+        div.sticky {
+            /*position: -webkit-sticky;*/
+            position: sticky;
+            padding: 5px;
+            top: 0;
+            background-color: #cae8ca;
+            border: 2px solid #4caf50;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            opacity: 0.3;
+        }
+
+        .imgTextDefault {
+            position: absolute;
+            font-size: 18px;
+        }
+
+        .container {
+            position: relative;
+        }
+
+        .left {
+            left: 16px;
+        }
+
+        .right {
+            right: 16px;
+        }
+
+        .top {
+            top: 8px;
+        }
+
+        .bottom {
+            bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+<h1>Привіт, світе!</h1>
+<div class="sticky">
+    Дів стіковий.
+</div>
+<br>
+<div class="static">
+    Тут дів зі статіком.
+</div>
+<br>
+<div class="relative">
+    Тут дів із релатівом.
+    <div class="absolute">
+        Тут дів абсолютний.
+    </div>
+</div>
+<br>
+<div class="fixed">
+    Тут дів фіксед.
+</div>
+
+<div class="container">
+    <img src="images/box3.jpg" alt="forest">
+    <div class="imgTextDefault left top">Left Top</div>
+    <div class="imgTextDefault right top">Right Top</div>
+    <div class="imgTextDefault left bottom">Left Bottom</div>
+    <div class="imgTextDefault right bottom">Right Bottom</div>
+</div>
+
+<div style="padding-bottom: 2000px"></div>
+</body>
+</html>

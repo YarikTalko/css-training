@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Image Gallery</title>
+    <style>
+        div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 180px;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<h1>Привіт, світе!</h1>
+<div class="gallery">
+    <a target="_blank" href="images/box1.jpg">
+        <img src="images/box1.jpg" alt="box1" width="600" height="400">
+    </a>
+    <div class="desc">First image</div>
+</div>
+<div class="gallery">
+    <a target="_blank" href="images/box2.jpg">
+        <img src="images/box2.jpg" alt="box2" width="600" height="400">
+    </a>
+    <div class="desc">Second image</div>
+</div>
+<div class="gallery">
+    <a target="_blank" href="images/box3.jpg">
+        <img src="images/box3.jpg" alt="box3" width="600" height="400">
+    </a>
+    <div class="desc">Third image</div>
+</div>
+<div class="gallery">
+    <a target="_blank" href="images/box4.jpg">
+        <img src="images/box4.jpg" alt="box4" width="600" height="400">
+    </a>
+    <div class="desc">Fourth image</div>
+</div>
+</body>
+</html>

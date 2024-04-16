@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Animations</title>
+
+    <style>
+        @keyframes example1 {
+            from {
+                background-color: red;
+            }
+            to {
+                background-color: yellow;
+            }
+        }
+
+        @keyframes example2 {
+            0% {
+                background-color: red;
+            }
+            25% {
+                background-color: yellow;
+            }
+            50% {
+                background-color: blue;
+            }
+            100% {
+                background-color: green;
+            }
+        }
+
+        @keyframes example3 {
+            0% {
+                background-color: red;
+                left: 0;
+                top: 0;
+            }
+            25% {
+                background-color: yellow;
+                left: 200px;
+                top: 0;
+            }
+            50% {
+                background-color: blue;
+                left: 200px;
+                top: 200px;
+            }
+            75% {
+                background-color: green;
+                left: 0;
+                top: 200px;
+            }
+            100% {
+                background-color: red;
+                left: 0;
+                top: 0;
+            }
+        }
+
+        @keyframes example4 {
+            from {
+                left: 0;
+            }
+
+            to {
+                left: 200px;
+                background-color: blue;
+            }
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+            background-color: red;
+            animation-duration: 4s;
+            /*animation-iteration-count: 3;*/
+            /*animation-direction: alternate-reverse;*/
+        }
+
+        div.ex1 {
+            animation-name: example1;
+        }
+
+        div.ex2 {
+            animation-name: example2;
+        }
+
+        div.ex3 {
+            animation-name: example3;
+            position: relative;
+            animation-delay: 2s;
+        }
+
+        div.atf1 {
+            animation-timing-function: linear;
+        }
+
+        div.atf2 {
+            animation-timing-function: ease;
+        }
+
+        div.atf3 {
+            animation-timing-function: ease-in;
+        }
+
+        div.atf4 {
+            animation-timing-function: ease-out;
+        }
+
+        div.atf5 {
+            animation-timing-function: ease-in-out;
+        }
+
+        div.ex4 {
+            animation-name: example4;
+            animation-fill-mode: both;
+            animation-delay: 2s;
+            position: relative;
+        }
+
+        div.ex5 {
+            animation: example4 5s linear 2s infinite alternate;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+<!--<div class="ex1"></div>-->
+<!--<div class="ex2"></div>-->
+<!--<div class="ex3"></div>-->
+<!--<div class="ex3 atf1"></div>-->
+<!--<div class="ex3 atf2"></div>-->
+<!--<div class="ex3 atf3"></div>-->
+<!--<div class="ex3 atf4"></div>-->
+<!--<div class="ex3 atf5"></div>-->
+<!--<div class="ex4"></div>-->
+<div class="ex5"></div>
+</body>
+</html>

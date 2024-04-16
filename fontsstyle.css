@@ -1,0 +1,62 @@
+.p1 {
+    font-family: "Times New Roman", Times, serif;
+}
+
+.p2 {
+    font-family: "Arial", Halvetica, serif;
+}
+
+.p3 {
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+body {
+    font-family: "Brush Script MT", cursive;
+}
+
+p.normal {
+    font-style: normal;
+}
+
+p.italic {
+    font-style: italic;
+}
+
+p.oblique {
+    font-style: oblique;
+}
+
+p.normalWeight {
+    font-weight: normal;
+}
+
+p.thickWeight {
+    font-weight: bold;
+}
+
+p.normalVariant {
+    font-variant: normal;
+}
+
+p.smallVariant {
+    font-variant: small-caps;
+}
+
+h1 {
+    /*font-size: 40px;*/
+    font-size: 2.5em;
+}
+
+h2 {
+    /*font-size: 30px;*/
+    font-size: 1.875em;
+}
+
+p {
+    /*font-size: 14px;*/
+    font-size: 0.875em;
+}
+
+body {
+    font-size: 100%;
+}

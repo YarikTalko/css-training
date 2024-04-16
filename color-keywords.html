@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Color Keywords</title>
+    <style>
+        /*body {*/
+        /*    background-image: url("images/paper.jpg");*/
+        /*}*/
+
+        /*div.ex1 {*/
+        /*    background-color: lightgreen;*/
+        /*    border: 2px solid black;*/
+        /*    padding: 15px;*/
+        /*}*/
+
+        /*div.ex2 {*/
+        /*    background-color: transparent;*/
+        /*    border: 2px solid black;*/
+        /*    padding: 15px;*/
+        /*}*/
+
+        /*div.ex3 {*/
+        /*    color: blue;*/
+        /*    border: 10px solid currentColor;*/
+        /*    padding: 15px;*/
+        /*}*/
+
+        body {
+            /*color: purple;*/
+            color: green;
+        }
+
+        div {
+            /*background-color: currentColor;*/
+            /*padding: 15px;*/
+            box-shadow: 0 0 15px currentColor;
+            border: 5px solid currentColor;
+            padding: 15px;
+        }
+
+        div p {
+            color: black;
+        }
+
+        div.ex4 {
+            border: 2px solid red;
+        }
+
+        span {
+            border: inherit;
+        }
+    </style>
+</head>
+<body>
+<h2>The currentcolor Keyword</h2>
+<p>This is some text in the body part...</p>
+<div class="ex4">
+    This div's background color is <span>span element</span> set to the current color value of the body element.
+</div>
+<!--<div class="ex1">This div has a light green background.</div>-->
+<!--<br>-->
+<!--<div class="ex2">This div has a transparent background.</div>-->
+<!--<br>-->
+<!--<div class="ex3">This div element has a blue text color and a blue border.</div>-->
+</body>
+</html>
